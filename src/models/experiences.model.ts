@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+
 const Schema = mongoose.Schema;
 
 let experienceSchema = new Schema({
@@ -11,7 +12,7 @@ let experienceSchema = new Schema({
     required: true,
   },
   description: {
-    type: Text,
+    type: String,
     required: true,
   },
   price: {
@@ -26,4 +27,4 @@ let experienceSchema = new Schema({
 
 const experienceModel = mongoose.model("experience", experienceSchema);
 
-module.exports = experienceModel;
+export default experienceModel;
