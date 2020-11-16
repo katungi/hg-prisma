@@ -1,6 +1,6 @@
 # Ola
 
-### let's use prisma with postgress
+## let's use prisma with postgress
 
 - run `npm install`
 - create a .env file inside `/prisma`
